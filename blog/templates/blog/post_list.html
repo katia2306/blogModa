@@ -22,6 +22,7 @@
     <!-- Blog entries -->
     <div class="w3-col l8 s12">
       <!-- Blog entry -->
+      {% if post.title != null %}
       <div class="w3-container w3-white w3-margin w3-padding-large">
         <div class="w3-center">
           <a href="{% url 'post_detail' pk=post.pk %}"><h3>{{post.title}}</h3></a>
@@ -59,6 +60,7 @@
           </div>
         </div>
       </div>
+      {% endif %}
       <hr>
 
       
